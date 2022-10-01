@@ -1,36 +1,36 @@
+html {
+  scroll-behavior: smooth;
+}
 
-
+/* text */
 .fancy{
     font-family: 'Marck Script', cursive;
 }
 
+/* navbar */
 .navbar-brand{
     color:#faf0be;
     font-family: 'Marck Script', cursive;
 }
 
+/* About */
 #top{
     font-family: 'Marck Script', cursive;
     text-align: center;
     background-color: #212F3C;
     padding: 8% 5%;
     color:#faf0be;
-    
-  
 }
 
 #monkey{
     margin-bottom: 2%;
     border-radius: 50%;
- 
 }
-
 
 #story{
     text-align: center;
     padding: 8% 5%;
     background-color: bisque;
-    
 }
 
 #pictures{
@@ -46,25 +46,6 @@
     
     font-family: 'Marck Script', cursive;
     color: #fff;
-}
-
- .footer{
-    background-color: bisque;
-    margin-top: 1%;
-    color: #212F3C;
-    position: relative;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    font-family: sans-serif;
- }
-
- #about{
-    text-align: center;
-    padding: 8% 5%;
-    background-color: bisque;
-    font-family: sans-serif;
-    
 }
 
 #testimonials{
@@ -83,167 +64,161 @@
     margin-right: 20px;
   }
 
-
-
-
   .carousel-item{
     padding: 7% 15%;
 }
 
-#about-body{
+  #about{
+    text-align: center;
+    padding: 8% 5%;
     background-color: bisque;
     font-family: sans-serif;
+}
+
+#about-body{
+  background-color: bisque;
+  font-family: sans-serif;
+}
+
+
+/* Footer */
+ .footer{
+    background-color: bisque;
+    margin-top: 1%;
+    color: #212F3C;
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: sans-serif;
+ }
+
+/* Front page  */
+
+#index-body{
+  background-color: bisque;
+  font-family: sans-serif;
 }
 
 #body-contact{
-    background-color: bisque;
-    font-family: sans-serif;
+  background-color: bisque;
+  font-family: sans-serif;
 }
 
 .card{
-    background-color: bisque;
-    font-family: sans-serif;
+  background-color: bisque;
+  font-family: sans-serif;
 }
 
-#index-body{
-    background-color: bisque;
-    font-family: sans-serif;
+.front-picture{
+  width: 100%;
+  height: auto;
 }
+
+#front-page-info{
+  margin-top:4%;
+  text-align: center;
+}
+
+.front-page-info-col{
+  margin-bottom: 5%;
+}
+
+#book-table-button{
+  margin-top: 7%;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  padding: 10px 24px;
+  transition-duration: 0.4s;
+}
+
+#book-table-button:hover{
+  background-color: #4CAF50; 
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.darken {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(images/The-Best-Food-In-Vietnam-Main.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+    
+  }
+
+  .centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Marck Script', cursive;
+    font-size: 400%;
+    text-align: center;
+  }
+
+  
+ .asdf{
+  font-size: 50%;
+ }
+
+/* Menu */
 
 #menu-body{
-    background-color: bisque;
-    font-family: sans-serif;
-    
+  background-color: bisque;
+  font-family: sans-serif;
+  
 }
 
-
-
-.contact3 {
-    font-family: "Montserrat", sans-serif;
-    color:#212F3C;
-    font-weight: 300;
-  }
-  
-  .contact3 h1,
-  .contact3 h2,
-  .contact3 h3,
-  .contact3 h4,
-  .contact3 h5,
-  .contact3 h6 {
-    color: #212F3C;
-  }
-  
-  .contact3 .font-weight-medium {
-    font-weight: 500;
-  }
-  
-  .contact3 .card-shadow {
-    -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
-    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
-  }
-  
-  .contact3 .btn-danger-gradiant {
-    background: #ff4d7e;
-    background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
-    background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
-    background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
-    background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
-  }
-  
-  .contact3 .btn-danger-gradiant:hover {
-    background: #ff6a5b;
-    background: -webkit-linear-gradient(legacy-direction(to right), #ff6a5b 0%, #ff4d7e 100%);
-    background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
-    background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
-    background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
-  }
-
-
-  .google-maps{
-    margin-top: 2%;
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-
-  }
-
-  #location{
-    margin-bottom: 2%;
-  }
-
-
-
-.page-section{
-    margin-top: 10%;
-    margin-bottom: 5%;
+.menu-block { 
+  margin-bottom: 30px;
 }
 
- 
-  .menu-block { 
-    margin-bottom: 30px;
- }
 .menu-title {
-      margin-bottom: 36px;
-       padding-bottom: 10px;
-       text-align: center;
-     }
+    margin-bottom: 36px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
 .menu-content {
-      margin-bottom: 30px;
-     }
+  margin-bottom: 30px;
+}
+
 .dish-content {
-     margin-top: 12px;
-      margin-bottom: 40px; 
-      
-    }
+  margin-top: 12px;
+  margin-bottom: 40px;   
+}
+
 .dish-meta {
-     font-size: 12px;
-      text-transform: uppercase; 
-      display: block;
-       width: 210px; 
-       line-height: 1.7;
-     }
+  font-size: 12px;
+  text-transform: uppercase; 
+  display: block;
+  width: 210px; 
+  line-height: 1.7;
+}
+
 .dish-title {
-     margin-bottom: 6px;
-      font-size: 15px;
-       text-transform: uppercase;
-        font-weight: 500;
-         position: relative;
-         }
+  margin-bottom: 6px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+}
+
 .dish-price { 
-  position: absolute;
-      right: 16px;
-       top: 0px;
-        font-size: 26px;
-        font-family: sans-serif;
-         font-weight: 500;
-       
-         }
-.well-block .dish-meta { 
-    width: 100%;
- }
+position: absolute;
+  right: 16px;
+  top: 0px;
+  font-size: 26px;
+  font-family: sans-serif;
+  font-weight: 500;   
+}
 
- 
-
-
-    #book-a-table {
-        color: aliceblue; 
-        background-color: #212F3C;
-        padding: 50px 0px;
-        margin: 50px 0px;
-        width: 80%;
-        margin-left: 10%
-        
-    }
-    .book-a-table p {
-        color: #9a9a9a;
-    }
-    .book-a-table textarea {
-        min-height: 200px;
-        max-width: 100%;
-        overflow: hidden;
-    }
-
-  
 .dish-img{
   width: 100%;
   height: auto;
@@ -258,41 +233,163 @@
   margin-left:10%;
 }
 
+.well-block .dish-meta { 
+  width: 100%;
+}
+
 .img-thumbnail:hover{
-        transition:all 0.6s; 
-        -ms-transform: scale(1.3); 
-        -webkit-transform: scale(1.3);
-        transform: scale(1.2); 
-        overflow:visible;
-        z-index:1 !important; 
-    }
+  transition:all 0.6s; 
+  -ms-transform: scale(1.3); 
+  -webkit-transform: scale(1.3);
+  transform: scale(1.2); 
+  overflow:visible;
+  z-index:1 !important; 
+}
+
+.menu-picture{
+height: 50%;
+width: 100%;
+overflow: hidden;
+}
+
+#menu-picture-div{
+height: 50%;
+width: 100%;
+}
+
+.inputNumber{
+  text-align: center;
+}
+
+.saveOrder{
+    margin-top: 7%;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    padding: 10px 24px;
+    transition-duration: 0.4s;
+  }
+  
+  .saveOrder:hover{
+    background-color: #4CAF50; 
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  #saveOrder{
+    text-align: center;
+  }
+
+  #input{
+   text-align: center;
+   background-color: #212F3C;
+   margin-left:25%;
+   margin-right: 25%;
+   padding:15% 15%;
+   border-radius: 25px;
+   margin-top: 5%;
+   color: #fff;
+   resize: none;
+   display: none;
+   font-family: sans-serif;
+  }
+
+  
 
 
-    .submit-button{
-      margin-left: 40%;
-    }
+/* Contact */
 
-    .front-picture{
-      width: 100%;
-      height: auto;
-    }
+.contact3 {
+  font-family: "Montserrat", sans-serif;
+  color:#212F3C;
+  font-weight: 300;
+}
 
-    #front-page-info{
-      margin-top:4%;
-      text-align: center;
-    }
+.contact3 h1,
+.contact3 h2,
+.contact3 h3,
+.contact3 h4,
+.contact3 h5,
+.contact3 h6 {
+  color: #212F3C;
+}
 
-   
+.contact3 .font-weight-medium {
+  font-weight: 500;
+}
 
-    #book-table-1{
-      margin-top: 25%;
- 
-    }
+.contact3 .card-shadow {
+  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
 
-    .front-page-info-col{
-      margin-bottom: 5%;
-    }
-    
+.contact3 .btn-danger-gradiant {
+  background: #ff4d7e;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
+  background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+}
+
+.contact3 .btn-danger-gradiant:hover {
+  background: #ff6a5b;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff6a5b 0%, #ff4d7e 100%);
+  background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+  background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+  background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
+}
+
+
+.google-maps{
+  margin-top: 2%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+#location{
+  margin-bottom: 2%;
+}
+
+
+
+.page-section{
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+/* Book-a-table */
+
+#book-a-table {
+  color: aliceblue; 
+  background-color: #212F3C;
+  padding: 50px 0px;
+  margin: 50px 0px;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  font-family: sans-serif;
+}
+.book-a-table p {
+  color: #9a9a9a;
+}
+.book-a-table textarea {
+  min-height: 200px;
+  max-width: 100%;
+  overflow: hidden;
+}        
+
+#book-table-1{
+  margin-top: 25%;
+}
+
+.submit-button{
+  margin-left: 40%;
+}
+
+
+/* Link */
+
 #link-body{
   background-color: bisque;
 }  
@@ -322,97 +419,44 @@ iframe {
   text-align: center;
 }
 
-.menu-picture{
-  height: 50%;
-width: 100%;
-overflow: hidden;
-}
 
-#menu-picture-div{
-height: 50%;
-width: 100%;
-}
+ 
+  
 
-#book-table-button{
-  margin-top: 7%;
-  border: 2px solid #4CAF50;
-  border-radius: 8px;
-  padding: 10px 24px;
-  transition-duration: 0.4s;
-}
+    
 
-#book-table-button:hover{
-  background-color: #4CAF50; 
-  color: white;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
+  
 
-/* .kalv{
-  position: relative;
-  text-align: center;
-  color: white;
-  font-size:400%;
-}
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-/* 
-.food-menu{
-  background-image: url(images/patt.jpg);
-  opacity: 10;
-} */
+
+
+
+    
+
+    
+
+   
+
+    
+
+    
+    
+
+
+
+
+
 
 
 
 
 
  
-.darken {
-  background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(images/The-Best-Food-In-Vietnam-Main.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 30rem;
-    
-  }
 
 
    
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-family: 'Marck Script', cursive;
-    font-size: 400%;
-    text-align: center;
-  }
+  
 
  
-/*   .centered2 {
-    position: relative;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-family: 'Marck Script', cursive;
-    font-size: 200%;
-    text-align: center;
-    font-weight: lighter;
-    
-  }
- */
 
 
- .asdf{
-  font-size: 50%;
- }

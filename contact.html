@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Oxygen&family=Tangerine&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
 </head>
 <body id="body-contact">
 
@@ -62,6 +63,8 @@
                   <img src="images/mankay.jpg" class="img-fluid rounded" alt="monkey">
                 </div>
               </div>
+
+             
               <div class="col-lg-6">
                 <div class="contact-box ml-3">
                   <h1 class="font-weight-light mt-2">Contact</h1>
@@ -69,26 +72,26 @@
                     <div class="row">
                       <div class="col-lg-12">
                         <div class="form-group mt-2">
-                          <input class="form-control" type="text" placeholder="name">
+                          <input class="form-control" type="text" id="contactName" placeholder="name">
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="form-group mt-2">
-                          <input class="form-control" type="email" placeholder="email address">
+                          <input class="form-control" type="email" id="contactEmail" placeholder="email address">
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="form-group mt-2">
-                          <input class="form-control" type="tel" placeholder="phone">
+                          <input class="form-control" type="tel" id="contactPhone" placeholder="phone">
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="form-group mt-2">
-                          <textarea class="form-control" rows="3" placeholder="message"></textarea>
+                          <textarea class="form-control" rows="3" id="contactTextarea" placeholder="message"></textarea>
                         </div>
                       </div>
                       <div class="col-lg-12">
-                        <button type="submit" class="btn btn-danger-gradiant mt-3 text-white border-0 px-3 py-2"><span> SUBMIT</span></button>
+                        <button type="submit" class="btn btn-danger-gradiant mt-3 text-white border-0 px-3 py-2" onclick="return contact()"><span> SUBMIT</span></button>
                       </div>
                     </div>
                   </form>

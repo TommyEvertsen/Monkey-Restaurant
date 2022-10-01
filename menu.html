@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Oxygen&family=Tangerine&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <script src="app.js"></script>
 </head>
 <body id="menu-body">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -53,7 +54,7 @@
         <div class=" container food-menu">
             
 
-            
+            <form method="get">
             <div class="row food-menu">
                 <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12 mb40 ">
                     <div class="menu-block rounded">
@@ -68,8 +69,9 @@
                                         <h5 class="dish-title">Summer rolls</h5>
                                         <span class="dish-meta">Fresh herbs and meat rolled</span>
                                         <div class="dish-price">
-                                        <p>$6</p>
+                                        <p>$7</p>
                                     </div>
+                                    Order:  <input type="number" name="Summer rolls" class="inputNumber" id="7" min="0" max="10">
                                     </div>
                                  </div>
                             </div>
@@ -86,6 +88,7 @@
                                         <div class="dish-price">
                                         <p>$8</p>
                                     </div>
+                                    Order:  <input type="number" name="Goi ga" class="inputNumber" id="8" min="0" max="10">
                                     </div>
                                     
                                 </div>
@@ -103,6 +106,7 @@
                                         <div class="dish-price">
                                         <p>$12</p>
                                     </div>
+                                    Order:  <input type="number" name="Sup cua" class="inputNumber" id="12" min="0" max="10">
                                     </div>
                                     
                                 </div>
@@ -126,6 +130,7 @@
                                         <div class="dish-price">
                                         <p>$15</p>
                                     </div>
+                                    Order:  <input type="number" name="Bum cha gio" class="inputNumber" id="15" min="0" max="10">
                                     </div>
                                     
                                 </div>
@@ -143,6 +148,7 @@
                                          <div class="dish-price">
                                         <p>$14</p>
                                     </div>
+                                    Order:  <input type="number" name="Bun bo hue" class="inputNumber" id="14" min="0" max="10">
                                     </div>
                                    
                                 </div>
@@ -160,8 +166,9 @@
                                         <div class="dish-price">
                                         <p>$14</p>
                                     </div>
+                                    Order:  <input type="number" name="Pho" class="inputNumber" id="14" min="0" max="10">
                                     </div>
-                                    
+                                </form>
                                 </div>
                             </div>
                         </div>
@@ -184,6 +191,7 @@
                                         <div class="dish-price">
                                         <p>$5</p>
                                     </div>
+                                    Order:  <input type="number" name="Che dau den" class="inputNumber" id="5" min="0" max="10">
                                     </div>
                                     
                                 </div>
@@ -202,6 +210,7 @@
                                           <div class="dish-price">
                                         <p>$6</p>
                                     </div>
+                                    Order:  <input type="number" name="Che xoi nuoc" class="inputNumber" id="6" min="0" max="10">
                                     </div>
                                     
                                 </div>
@@ -219,6 +228,7 @@
                                         <div class="dish-price">
                                         <p>$5</p>
                                     </div>
+                                    Order:  <input type="number" name="Banh cam" class="inputNumber" id="5" min="0" max="10" >
                                     </div>
                                     
                                 </div>
@@ -226,15 +236,21 @@
                         </div>
                     </div>
                 </div>
-               
-                 
               </div>
             </div>
            </div>
+
+           <div id="saveOrder" >
+            <input type="submit" class="saveOrder" value="Save order" name="submit" onclick="return totalOrder()">
+            <input type="submit" class="saveOrder" value="Checkout" name="submit" onclick="return showOrder()">
+         </div>
  
+           <div  id="input">
+                
+        </div>
 
-
-
+           
+        
 
 
 
