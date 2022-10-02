@@ -38,7 +38,7 @@ function showOrder(){
  
 /* Order confirmation   */ 
 function confirmOrder(){
-    document.getElementById('input').innerHTML = "<h4>Order confirmed</h4>" + "<br>" + "Please allow us 30-50 minutes for delivery"
+    document.getElementById('input').innerHTML =  "<h4>Order confirmed</h4>" + "<br>" + "Please allow us 30-50 minutes for delivery" 
 }
 
 /* Book table */
