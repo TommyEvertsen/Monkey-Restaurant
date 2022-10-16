@@ -1,7 +1,12 @@
 var order = []
+var checkout = []
+
 
 /* Check what is selected and add it to local storage */
 function totalOrder(){
+    if (localStorage.length > 0){
+        order = [];
+    }
     for (var i = 0; i < document.forms[0].length; i++){
 
             if (document.forms[0].elements[i].value != 0){    
@@ -14,6 +19,7 @@ function totalOrder(){
  /* Make array into Json and store it */
  var myJsonString = JSON.stringify(order);    
  localStorage.setItem('totalOrder', myJsonString);
+ alert("Order saved for next time.")
 }
 
 /* Show order from local storage */
@@ -29,16 +35,47 @@ function showOrder(){
    .style.display = "block";
 }
     /* Output elements from array */
-    document.getElementById('input').innerHTML = "<h4>Your order:</h4>" + "<br>" + withoutCommas + "<br>" + '<input type="submit" class="saveOrder" value="Confirm Order" name="submit" onclick="return confirmOrder()">'
+    document.getElementById('input').innerHTML = "<h4>Your order:</h4>" + "<br>" + withoutCommas + "<br>" + '<input type="submit" class="saveOrder2" value="Checkout" name="submit" onclick="return confirmOrder()">'
      /*  Scroll to the order */
-     var elem = document.getElementById("input");
+     let elem = document.getElementById("input");
      elem.scrollIntoView();
 }
+
     };
  
 /* Order confirmation   */ 
 function confirmOrder(){
-    document.getElementById('input').innerHTML =  "<h4>Order confirmed</h4>" + "<br>" + "Please allow us 30-50 minutes for delivery" 
+    console.log(checkout)
+     if (order.length < 1 && checkout.length < 1){
+        document.getElementById('input').innerHTML =  "<h4>Please select your food items</h4>"
+    }
+  else  document.getElementById('input').innerHTML =  "<h4>Order confirmed</h4>" + "<br>" + "Please allow us 30-50 minutes for delivery" 
+  console.log(order)
+}
+
+/* Checkout */
+function sjekkUt(){
+    if (checkout.length > 0){
+        checkout = [];
+    }
+    for (var i = 0; i < document.forms[0].length; i++){
+
+        if (document.forms[0].elements[i].value != 0){    
+        checkout.push  (document.forms[0].elements[i].value)
+        checkout.push(" " + document.forms[0].elements[i].name +" " +  "$"  + document.forms[0].elements[i].value * document.forms[0].elements[i].id + " "   )
+        checkout.push('<br>');
+        }
+
+        document.getElementById('input')
+        .style.display = "block";
+        /* Output elements from array */
+        var checoutNoCommas = checkout.join('')
+        document.getElementById('input').innerHTML = "<h4>Your order:</h4>" + "<br>" + checoutNoCommas + '<br>' + '<input type="submit" class="saveOrder2" value="Checkout" name="submit" onclick="return confirmOrder()">'
+        /*  Scroll to the order */
+        let elem = document.getElementById("input");
+        elem.scrollIntoView();
+    }
+      
 }
 
 /* Book table */
@@ -74,5 +111,5 @@ function contact(){
    /*  Remove commas from array */
  var contactDetailsWithoutComma = contactDetails.join(''); 
  /* Open default email and pre populate the mail */
- window.open("mailto:tommyevertsen52@gmail.com.com?subject=Contact&body=" + contactDetailsWithoutComma); 
+ window.open("mailto:tommyevertsen52@gmail.com?subject=Contact&body=" + contactDetailsWithoutComma); 
 }
